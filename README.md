@@ -31,7 +31,7 @@ L’interfaccia grafica e la comunicazione con il backend Python sono realizzate
 
 ## 💾 Download dell'ultima versione
 
-[📦 Clicca qui per scaricare l’eseguibile](https://github.com/GCGabry/rubricatelefonicapython/releases/download/Release/RubricaPy.exe)
+[📦 Clicca qui per scaricare l’eseguibile](https://github.com/gabricocche/rubricatelefonicapython/releases/download/Release/RubricaPy.exe)
 
 ---
 
