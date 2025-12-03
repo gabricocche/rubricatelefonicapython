@@ -12,7 +12,9 @@ document.addEventListener('click', event => {
             .querySelector('.numero_di_telefono')
             .textContent.trim();
         console.log(numero_di_telefono); // controllo il corretto prelievo del numero di telefono
-        window.pywebview.api.eliminaContatto(numero_di_telefono) //utilizzo il metodo che elimina il contatto dalla rubrica temporanea e dal csv
-            .then(() => window.pywebview.api.get_contatti());//successivaente aggiorno la grafica(scomparsa di un contatto)
+        if(confirm("Sei sicuro di voler eliminare questo contatto?")) {
+            window.pywebview.api.eliminaContatto(numero_di_telefono) //utilizzo il metodo che elimina il contatto dalla rubrica temporanea e dal csv
+                .then(() => window.pywebview.api.get_contatti());//successivaente aggiorno la grafica(scomparsa di un contatto)
+        }
     }
 });
