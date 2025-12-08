@@ -24,7 +24,7 @@ class Api_form:
         elif tipo=='m':
             self.numero_da_modificare=numero_da_modificare
             file_path = os.path.join(cartella_corrente, "modifica.html")
-            window_mod=webview.create_window('modifica', f'file://{file_path}',js_api=self, width=500, height=550, resizable=False) #creo la finestra
+            window_mod=webview.create_window('modifica', f'file://{file_path}',js_api=self, width=700, height=550, resizable=False) #creo la finestra
             self.finestra=window_mod
 
     #metodo che ritorna a js il contatto da modificare
